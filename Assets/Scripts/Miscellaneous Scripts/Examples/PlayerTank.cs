@@ -10,4 +10,4 @@ public class PlayerTank : MonoSingletonGeneric<PlayerTank>
         //tank inititation scripts
     }
 }
-}
+
