@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TankService : MonoBehaviour
 {
-    [SerializeField] TankView tankView;
+    [SerializeField] TankView[] models;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,18 +13,25 @@ public class TankService : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(Input.GetKeyDown(KeyCode.Z))
+        {
+            createNewTank(1);
+        }
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            createNewTank(0);
+        }
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            createNewTank(2);
+        }
+
     }
 
-    public void StartGame()
-    {
-        
-    }
-
-    private TankController createNewTank()
+    private TankController createNewTank(int index)
     {
         TankModel model = new TankModel(5, 100f);
-        TankController tank = new TankController(model, tankView);
+        TankController tank = new TankController(model, models[index]);
         return tank;
     }
 }
