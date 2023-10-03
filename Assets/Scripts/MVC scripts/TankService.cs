@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class TankService : MonoBehaviour
 {
-    [SerializeField] TankView[] models;
+    //[SerializeField] TankView[] models;
+    [SerializeField] TankScriptableObjectsList list;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,8 +31,8 @@ public class TankService : MonoBehaviour
 
     private TankController createNewTank(int index)
     {
-        TankModel model = new TankModel(5, 100f);
-        TankController tank = new TankController(model, models[index]);
+        TankModel model = new TankModel(list.list[index]);
+        TankController tank = new TankController(model, list.list[index].tankview);
         return tank;
     }
 }

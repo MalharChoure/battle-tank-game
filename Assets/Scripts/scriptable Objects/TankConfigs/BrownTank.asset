@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3695703a86e6ad4481a237ea05cb0bf, type: 3}
+  m_Name: BrownTank
+  m_EditorClassIdentifier: 
+  health: 200
+  speed: 30
+  type: 0
+  model: {fileID: 6007172147899578444, guid: 0cdcd3588ec343a4babf0578e2cce51a, type: 3}
