@@ -24,7 +24,8 @@ public class ShellService : MonoBehaviour
     {
         Vector3 pos = transform.position + transform.forward * 1 + transform.up * 1.5f;
         ShellModel model = new ShellModel(10);
-        ShellControler shell=new ShellControler(model,shellView,pos);
+        Debug.Log(pos - transform.position);
+        ShellControler shell=new ShellControler(model,shellView,pos,pos-transform.position);
         return shell;
     }
 }

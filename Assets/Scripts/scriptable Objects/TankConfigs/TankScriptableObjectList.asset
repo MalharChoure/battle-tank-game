@@ -12,4 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50dcb6ac5677b27488f5931719aabdc8, type: 3}
   m_Name: TankScriptableObjectList
   m_EditorClassIdentifier: 
-  list: []
+  list:
+  - {fileID: 11400000, guid: b94659bc402b8994fb1101896e123b22, type: 2}
+  - {fileID: 11400000, guid: 8fe90dce91d573343a4a09e03a234dfc, type: 2}
+  - {fileID: 11400000, guid: 26aa181c3fd288d4f883e6af30e82f44, type: 2}

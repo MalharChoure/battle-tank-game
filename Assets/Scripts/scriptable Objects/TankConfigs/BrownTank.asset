@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: BrownTank
   m_EditorClassIdentifier: 
   health: 200
-  speed: 30
+  speed: 3
   type: 0
-  model: {fileID: 6007172147899578444, guid: 0cdcd3588ec343a4babf0578e2cce51a, type: 3}
+  tankview: {fileID: 4049595655055164184, guid: 0cdcd3588ec343a4babf0578e2cce51a,
+    type: 3}
+  turnSpeed: 2

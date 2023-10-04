@@ -24,7 +24,7 @@ public class TankView : MonoBehaviour
         if (model != null)
         {
             transform.RotateAround(transform.position, Vector3.up, model.TurnSpeed * Input.GetAxis("HorizontalUI"));
-            Debug.Log(Input.GetAxis("HorizontalUI") + " " + Input.GetAxis("VerticalUI"));
+            //Debug.Log(Input.GetAxis("HorizontalUI") + " " + Input.GetAxis("VerticalUI"));
         }
         
     }
