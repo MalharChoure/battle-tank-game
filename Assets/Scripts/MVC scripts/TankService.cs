@@ -6,6 +6,7 @@ public class TankService : MonoBehaviour
 {
     //[SerializeField] TankView[] models;
     [SerializeField] TankScriptableObjectsList list;
+    bool triggeronce = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,17 +15,23 @@ public class TankService : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Z))
+        if (triggeronce)
         {
-            createNewTank(1);
-        }
-        if (Input.GetKeyDown(KeyCode.X))
-        {
-            createNewTank(0);
-        }
-        if (Input.GetKeyDown(KeyCode.C))
-        {
-            createNewTank(2);
+            if (Input.GetKeyDown(KeyCode.Z))
+            {
+                DestroyerScript.player = createNewTank(1);
+                triggeronce = false;
+            }
+            if (Input.GetKeyDown(KeyCode.X))
+            {
+                DestroyerScript.player = createNewTank(0);
+                triggeronce = false;
+            }
+            if (Input.GetKeyDown(KeyCode.C))
+            {
+                DestroyerScript.player = createNewTank(2);
+                triggeronce = false;
+            }
         }
 
     }

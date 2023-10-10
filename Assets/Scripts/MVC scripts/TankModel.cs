@@ -23,4 +23,11 @@ public class TankModel
     public int Health { get; }
     public int TurnSpeed { get; }
     public tankType Type { get; }
+
+    public bool dead=false;
+
+    public void test()
+    {
+        Debug.Log("Nhere");
+    }
 }

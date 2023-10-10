@@ -8,6 +8,6 @@ public class ShellModel
     {
         Speed = speed;
     }
-
+    
     public int Speed { get;}
 }
