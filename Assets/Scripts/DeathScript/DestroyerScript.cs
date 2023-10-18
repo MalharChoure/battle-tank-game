@@ -19,7 +19,7 @@ public class DestroyerScript : MonoSingletonGeneric<DestroyerScript>
     {
         if (player != null && !destroyall)
         {
-            Debug.Log(player.TankModel.dead);
+            //Debug.Log(player.TankModel.dead);
             if (player.TankModel.dead)
             {
                 destroyAll();

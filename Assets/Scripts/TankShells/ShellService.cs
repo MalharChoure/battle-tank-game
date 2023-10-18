@@ -17,6 +17,7 @@ public class ShellService : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.F))
         {
             createShell();
+            AchievementScipt.OnFire.Invoke();
         }
     }
 
@@ -24,7 +25,7 @@ public class ShellService : MonoBehaviour
     {
         Vector3 pos = transform.position + transform.forward * 1 + transform.up * 1.5f;
         ShellModel model = new ShellModel(10);
-        Debug.Log(pos - transform.position);
+        //Debug.Log(pos - transform.position);
         ShellControler shell=new ShellControler(model,shellView,pos,pos-transform.position);
         return shell;
     }

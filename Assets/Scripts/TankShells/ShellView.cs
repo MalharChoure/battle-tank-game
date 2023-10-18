@@ -19,7 +19,7 @@ public class ShellView : MonoBehaviour
     {
         if (dir != null)
         {
-            Debug.Log(dir);
+            //Debug.Log(dir);
             _rb.AddForce((dir  + new Vector3(0,-1,0))*10, ForceMode.Impulse);
         }
     }

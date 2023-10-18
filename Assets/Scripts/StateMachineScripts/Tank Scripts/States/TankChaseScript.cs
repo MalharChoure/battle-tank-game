@@ -21,7 +21,7 @@ public class TankChaseScript : TankInterface
         {
             obj.statemachine.changeState(tankState.Attack);
         }
-        if(player != null && Vector3.Magnitude(player.position - obj.transform.position) >40)
+        else if(player != null && Vector3.Magnitude(player.position - obj.transform.position) >40)
         {
             obj.statemachine.changeState(tankState.Patrolling);
         }
