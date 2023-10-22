@@ -3,17 +3,20 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Shell
+  - Enemy
+  - Enemy Shell
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
-  - 
-  - 
-  - 
+  - PlayerProjectiles
+  - Enemy
+  - Enemy Projectile
   - 
   - 
   - 
