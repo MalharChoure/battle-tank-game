@@ -7,7 +7,9 @@ public class ShellControler
     public ShellControler(ShellModel model, ShellView view,Vector3 pos, Vector3 dir) 
     {
         Model= model;
-        View = GameObject.Instantiate<ShellView>(view,pos,Quaternion.identity);
+
+
+        GameObject.Instantiate<ShellView>(view,pos,Quaternion.identity);
         front = dir;
         view.dir = dir;
     }

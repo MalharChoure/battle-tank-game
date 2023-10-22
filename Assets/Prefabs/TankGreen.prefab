@@ -266,6 +266,7 @@ GameObject:
   - component: {fileID: 5433521671586826743}
   - component: {fileID: -6914870566616929552}
   - component: {fileID: -2506494653472839172}
+  - component: {fileID: -8080601079703826078}
   m_Layer: 3
   m_Name: TankGreen
   m_TagString: Player
@@ -362,6 +363,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shellView: {fileID: -9103046769479949317, guid: 1e0213533c0682d488386eaddcf168bd,
     type: 3}
+--- !u!114 &-8080601079703826078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5433521672946028964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09d2540a56f1b9e4b8a8c8b6b67891a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5433521672946028966
 GameObject:
   m_ObjectHideFlags: 0
